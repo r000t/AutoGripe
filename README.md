@@ -1,7 +1,7 @@
 AutoGripe
 =========
 
-fail2ban action script that uses SMTP or Gmail to send abuse complaints
+fail2ban action script that uses SMTP or Gmail to send abuse complaints. It was inspired by ```sendmail-complain``` and uses the abusix Abuse Contact Database to obtain abuse email addresses. It was designed for those who don't want to set up an entire mail server just to send abuse reports; Reports sent through sendmail by itself will probably get caught up in spam filters. AutoGripe lets you use an already-existing email account through SMTP.
 
 Requirements
 ------------

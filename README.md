@@ -18,8 +18,8 @@ Instructions for Use
 1. Create a folder only readable by root
 2. Put querycontacts.py and autogripe.py in that folder
 3. Edit the top of autogripe.py with your SMTP server, port, and credentials
-4. Put autogripe.conf in /etc/fail2ban/action.d
-5. Add AutoGripe to the SSH jail in /etc/fail2ban/jail.conf (Instructions below.)
+4. Put autogripe.conf in /etc/fail2ban/action.d and edit it, changing /path/to/autogripe.py to the actual path
+5. Add the ```autogripe``` action to the SSH jail in /etc/fail2ban/jail.conf (Instructions below.)
 
 AutoGripe was designed around SSH, but it should work with any sort of jail. All you need to do is change logpath in the jail to a log that contains the IP address and relevant information about the attack.
 

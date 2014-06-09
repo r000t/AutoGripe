@@ -33,7 +33,9 @@ The JAILS section of /etc/fail2ban/jail.conf contains various instructions for f
 The action variable in the jail tells fail2ban what action script to execute. You can specify more than one. Just add the second (or subsequent) action under the first one. For example:
 
 <pre>action   = iptables-multiport
-           sendmail-complain</pre>
+           autogripe[logpath=/var/log/auth.log]</pre>
+
+You will also need to add the path to the log file, as shown above.
 
 Save the file, and then restart fail2ban:
 

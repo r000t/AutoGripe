@@ -22,8 +22,8 @@ A similar issue you may face is that while the Abuse Contact DB is pretty comple
 Instructions for Use
 --------------------
 
-1. Create a folder only readable by root
-2. Put querycontacts.py and autogripe.py in that folder
+1. Create a folder only readable by root (Or just use /root)
+2. Put querycontacts.py and autogripe.py in that folder, and ```chmod +x``` the latter.
 3. Edit the top of autogripe.py with your SMTP server, port, and credentials
 4. Put autogripe.conf in /etc/fail2ban/action.d/ and edit it, changing /path/to/autogripe.py to the actual path
 5. Add the ```autogripe``` action to the SSH jail in /etc/fail2ban/jail.conf (Instructions below.)
